@@ -8,82 +8,85 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img src="img/bg-top.svg" alt="" class="bg-shape bg-shape-top-desktop">
-<img src="img/bg-bottom.svg" alt="" class="bg-shape bg-shape-bottom-desktop">
-<div class="container" role="membership">
-    <div class="content">
-        <h1 class="title">Our Pricing</h1>
-        <div class="btn-container">
-            <small>Annually</small>
-            <button type="button" class="btn-toggle"></button>
-            <small>Monthly</small>
-        </div>
-        <div class="price-container monthly active">
-            <div class="single-price basic">
-                <p>Basic</p>
-                <h2><span class="currency">&dollar;</span> 19.99</h2>
-                <ul>
-                    <li>500 GB Storage</li>
-                    <li>2 Users Allowed</li>
-                    <li>Send up to 3 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
+<img src="img/bg-top.svg" alt="" class="bg-shape bg-shape-top-desktop" role="img">
+<img src="img/bg-bottom.svg" alt="" class="bg-shape bg-shape-bottom-desktop" role="img">
+
+<main role="main">
+    <div class="container" role="contentinfo">
+        <div class="content" role="contentinfo">
+            <h1 class="title" role="heading">Our Pricing</h1>
+            <div class="btn-container" role="contentinfo">
+                <small role="text">Annually</small>
+                <button type="button" id="btn-toggle" class="btn-toggle" aria-label="nameone" title="titleone"></button>
+                <small role="text">Monthly</small>
             </div>
-            <div class="single-price professional">
-                <p>Professional</p>
-                <h2><span class="currency">&dollar;</span> 24.99</h2>
-                <ul>
-                    <li>1 TB Storage</li>
-                    <li>5 Users Allowed</li>
-                    <li>Send up to 10 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
+            <div class="price-container monthly active" role="combobox">
+                <div class="single-price basic" role="contentinfo">
+                    <p role="doc-subtitle">Basic</p>
+                    <h2 role="text"><span class="currency" role="text">&dollar;</span> 19.99</h2>
+                    <ul role="listbox">
+                        <li role="listitem">500 GB Storage</li>
+                        <li role="listitem">2 Users Allowed</li>
+                        <li role="listitem">Send up to 3 GB</li>
+                    </ul>
+                    <button type="button" id="btn" class="btn btn-learn-more" aria-label="nametwo" title="titletwo">Learn More</button>
+                </div>
+                <div class="single-price professional" role="contentinfo">
+                    <p role="doc-subtitle">Professional</p>
+                    <h2 role="text"><span class="currency" role="text">&dollar;</span> 24.99</h2>
+                    <ul role="listbox">
+                        <li role="listitem">1 TB Storage</li>
+                        <li role="listitem">5 Users Allowed</li>
+                        <li role="listitem">Send up to 10 GB</li>
+                    </ul>
+                    <button type="button" id="id" class="btn btn-learn-more" aria-label="namethree" title="titlethree">Learn More</button>
+                </div>
+                <div class="single-price master" role="contentinfo">
+                    <p role="doc-subtitle">Master</p>
+                    <h2 role="text"><span class="currency" role="text">&dollar;</span> 39.99</h2>
+                    <ul role="listbox">
+                        <li role="listitem">2 TB Storage</li>
+                        <li role="listitem">10 Users Allowed</li>
+                        <li role="listitem">Send up to 20 GB</li>
+                    </ul>
+                    <button type="button" id="btn" class="btn btn-learn-more" aria-label="namefour" title="titlefour">Learn More</button>
+                </div>
             </div>
-            <div class="single-price master">
-                <p>Master</p>
-                <h2><span class="currency">&dollar;</span> 39.99</h2>
-                <ul>
-                    <li>2 TB Storage</li>
-                    <li>10 Users Allowed</li>
-                    <li>Send up to 20 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
-            </div>
-        </div>
-        <div class="price-container annually">
-            <div class="single-price basic">
-                <p>Basic</p>
-                <h2><span class="currency">&dollar;</span> 199.99</h2>
-                <ul>
-                    <li>500 GB Storage</li>
-                    <li>2 Users Allowed</li>
-                    <li>Send up to 3 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
-            </div>
-            <div class="single-price professional">
-                <p>Professional</p>
-                <h2><span class="currency">&dollar;</span> 249.99</h2>
-                <ul>
-                    <li>1 TB Storage</li>
-                    <li>5 Users Allowed</li>
-                    <li>Send up to 10 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
-            </div>
-            <div class="single-price master">
-                <p>Master</p>
-                <h2><span class="currency">&dollar;</span> 399.99</h2>
-                <ul>
-                    <li>2 TB Storage</li>
-                    <li>10 Users Allowed</li>
-                    <li>Send up to 20 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
+            <div class="price-container annually" role="combobox">
+                <div class="single-price basic" role="contentinfo">
+                    <p role="doc-subtitle">Basic</p>
+                    <h2 role="text"><span class="currency" role="text">&dollar;</span> 199.99</h2>
+                    <ul role="listbox">
+                        <li role="listitem">500 GB Storage</li>
+                        <li role="listitem">2 Users Allowed</li>
+                        <li role="listitem">Send up to 3 GB</li>
+                    </ul>
+                    <button type="button" id="btn" class="btn btn-learn-more" aria-label="namefive" title="titlefive">Learn More</button>
+                </div>
+                <div class="single-price professional">
+                    <p role="doc-subtitle">Professional</p>
+                    <h2 role="text"><span class="currency" role="text">&dollar;</span> 249.99</h2>
+                    <ul role="listbox">
+                        <li role="listitem">1 TB Storage</li>
+                        <li role="listitem">5 Users Allowed</li>
+                        <li role="listitem">Send up to 10 GB</li>
+                    </ul>
+                    <button type="button" id="btn" class="btn btn-learn-more" aria-label="namesix" title="titlesix">Learn More</button>
+                </div>
+                <div class="single-price master">
+                    <p role="doc-subtitle">Master</p>
+                    <h2 role="text"><span class="currency" role="text">&dollar;</span> 399.99</h2>
+                    <ul role="listbox">
+                        <li role="listitem">2 TB Storage</li>
+                        <li role="listitem">10 Users Allowed</li>
+                        <li role="listitem">Send up to 20 GB</li>
+                    </ul>
+                    <button type="button" id="btn" class="btn btn-learn-more" aria-label="nameseven" title="titleseven">Learn More</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</main>
   
 </body>
 
