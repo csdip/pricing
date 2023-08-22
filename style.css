@@ -69,27 +69,28 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
+    transition: .3s;
+}
+
+.btn-toggle:hover{
+    background-color: #a3a8f0;
 }
 
 .btn-toggle::before {
-    content: '';
+	content: '';
 	position: absolute;
 	top: 50%;
-	right: 15px;
+	right: -8px;
 	transform: translate(-50%, -12px);
 	width: 25px;
 	height: 25px;
 	background: var(--Very-Light-Grayish-Blue);
 	border-radius: 50px;
-    transition: .3s;
-}
-
-.btn-toggle.active{
-    background: #a3a8f0;
+	transition: .3s;
 }
 
 .btn-toggle.active::before{
-    right: -8px;
+    right: 15px;
 }
 
 small{
@@ -100,16 +101,16 @@ small{
 .price-container{
     display: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 }
 
-.annually.active{
+.monthly.active{
     display: grid;
 }
 
-.monthly.active{
+.annually.active{
     display: grid;
 }
 
@@ -131,9 +132,9 @@ small{
     color: var(--Dark-Grayish-Blue);
 }
 
-.single-price.professional .btn-learn-more:hover{
-    border-color: var(--Very-Light-Grayish-Blue);
-    color: var(--Very-Light-Grayish-Blue);
+.single-price.professional .btn-learn-more:hover {
+	outline-color: var(--Very-Light-Grayish-Blue);
+	color: var(--Very-Light-Grayish-Blue);
 }
 
 .single-price.single-price.professional p, .single-price.single-price.professional h2, .single-price.single-price.professional li{
@@ -198,7 +199,6 @@ small{
 	background: var(--Linear-Gradient);
 	cursor: pointer;
 	padding: 16px;
-	transition: .3s;
 	border: none;
 }
 
@@ -227,6 +227,10 @@ small{
         right: -220px;
     }
     .bg-shape-bottom-desktop{
+        display: none;
+    }
+    .bg-shape-top-desktop {
+        right: -220px;
         display: none;
     }
 }
