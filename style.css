@@ -117,7 +117,7 @@ small{
 .single-price{
     border-radius: 10px;
     padding: 30px;
-    background-color: var(--Very-Light-Grayish-Blue);
+    background-color: white;
     box-shadow: 0 12px 80px rgba(0, 0, 0, 0.1);
 }
 
