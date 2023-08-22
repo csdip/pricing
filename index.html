@@ -18,39 +18,7 @@
             <button type="button" class="btn-toggle"></button>
             <small>Monthly</small>
         </div>
-        <div class="price-container annually active">
-            <div class="single-price basic">
-                <p>Basic</p>
-                <h2><span class="currency">&dollar;</span> 199.99</h2>
-                <ul>
-                    <li>500 GB Storage</li>
-                    <li>2 Users Allowed</li>
-                    <li>Send up to 3 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
-            </div>
-            <div class="single-price professional">
-                <p>Professional</p>
-                <h2><span class="currency">&dollar;</span> 249.99</h2>
-                <ul>
-                    <li>1 TB Storage</li>
-                    <li>5 Users Allowed</li>
-                    <li>Send up to 10 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
-            </div>
-            <div class="single-price master">
-                <p>Master</p>
-                <h2><span class="currency">&dollar;</span> 399.99</h2>
-                <ul>
-                    <li>2 TB Storage</li>
-                    <li>10 Users Allowed</li>
-                    <li>Send up to 20 GB</li>
-                </ul>
-                <button type="button" class="btn btn-learn-more">Learn More</button>
-            </div>
-        </div>
-        <div class="price-container monthly">
+        <div class="price-container monthly active">
             <div class="single-price basic">
                 <p>Basic</p>
                 <h2><span class="currency">&dollar;</span> 19.99</h2>
@@ -82,6 +50,38 @@
                 <button type="button" class="btn btn-learn-more">Learn More</button>
             </div>
         </div>
+        <div class="price-container annually">
+            <div class="single-price basic">
+                <p>Basic</p>
+                <h2><span class="currency">&dollar;</span> 199.99</h2>
+                <ul>
+                    <li>500 GB Storage</li>
+                    <li>2 Users Allowed</li>
+                    <li>Send up to 3 GB</li>
+                </ul>
+                <button type="button" class="btn btn-learn-more">Learn More</button>
+            </div>
+            <div class="single-price professional">
+                <p>Professional</p>
+                <h2><span class="currency">&dollar;</span> 249.99</h2>
+                <ul>
+                    <li>1 TB Storage</li>
+                    <li>5 Users Allowed</li>
+                    <li>Send up to 10 GB</li>
+                </ul>
+                <button type="button" class="btn btn-learn-more">Learn More</button>
+            </div>
+            <div class="single-price master">
+                <p>Master</p>
+                <h2><span class="currency">&dollar;</span> 399.99</h2>
+                <ul>
+                    <li>2 TB Storage</li>
+                    <li>10 Users Allowed</li>
+                    <li>Send up to 20 GB</li>
+                </ul>
+                <button type="button" class="btn btn-learn-more">Learn More</button>
+            </div>
+        </div>
     </div>
 </div>
   
@@ -93,13 +93,13 @@
     const annually = document.querySelector('.annually')
 
     btn.addEventListener('click', ()=>{
-        if(annually.classList.contains('active')){
-            annually.classList.remove('active')
-            monthly.classList.add('active')
+        if(monthly.classList.contains('active')){
+            monthly.classList.remove('active')
+            annually.classList.add('active')
             btn.classList.add('active')
         }else{
-            annually.classList.add('active')
-            monthly.classList.remove('active')
+            monthly.classList.add('active')
+            annually.classList.remove('active')
             btn.classList.remove('active')
         }
     })
